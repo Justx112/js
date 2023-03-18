@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Пользователи:</div>
+    <ul>
+        <li>Джон</li>
+        <li>Пит</li>
+    </ul>
+    <script>
+        /*Напишите код, как получить…
+        элемент < div >?
+        <ul>?
+        второй <li> (с именем Пит)? */
+        alert(document.body.firstElementChild)
+        alert(document.body.children[1])
+        alert(document.body.children[1].children[1])
+
+        /* Если elem – произвольный узел DOM - элемента…
+
+        Правда, что elem.lastChild.nextSibling всегда равен null ?
+        Правда, что elem.children[0].previousSibling всегда равен null ? 
+        
+        Ответ: 1 - Да; 2 - если есть нода с текстом то вернет ее инчае null
+        */
+
+        /* Напишите код, который выделит красным цветом все ячейки в таблице по диагонали.
+        Вам нужно получить из таблицы < table > все диагональные < td > и выделить их, используя код:
+        //  в переменной td находится DOM-элемент для тега <td>
+        td.style.backgroundColor = 'red'; */
+        let selectArray = [0, 1, 2, 3, 4]
+
+        for(let i = 0; i < table.rows.length; i++){
+            table.rows[i].cells[i].style.backgroundColor = 'red'
+        }
+
+    </script>
+</body>
+
+</html>
